@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin-bottom: 10;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    line-height: 1.6;
+    overflow: scroll;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo .logoletter {
+    color: rgb(188, 35, 35);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 1.5rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: rgb(188, 35, 35);
+}
+.search input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+.search button {
+    padding: 0.5rem;
+    background: rgb(188, 35, 35);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.hero-image {
+    width: auto;   
+    height: 0%;   
+    background: transparent;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+     background-color: rgb(54, 12, 12); 
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color:white;
+}
+.aboutus {
+    padding: 2rem;
+    text-align: center;
+}
+
+.aboutus h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.grid {
+
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    background: rgb(115 26 26);
+    padding: 1rem;
+    
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.card h2 {
+    font-size: 1.2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+footer {
+    background: rgb(54, 12, 12);;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.darkmode{
+    background-color: black;
+  color: white;
+}
+.darkmode button {
+    background-color: #333;
+    color: white;
+ }
+
+ .grid h2 {
+    color:white;
+    }
+  body.darkmode .grid h2 {
+    color: rgb(188, 35, 35);
+    }
+ body.darkmode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.darkmode header {
+    background-color: #222;
+    color: #fff;
+}
+
+body.darkmode nav ul li a {
+    color: #fff;
+}
+body.darkmode .search button{
+    background-color:rgb(188, 35, 35); 
+}
+body.darkmode nav ul li a:hover {
+    color: rgb(188, 35, 35);
+}
+
+body.darkmode .card {
+    background-color: #444;
+    color: #fff;
+}
+
+
+body.darkmode footer {
+    background-color:rgb(54, 12, 12);
+    color: #fff;
+}
+.darkmode button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+body.darkmode .darkmode button {
+    background-color: #555;
+    color: #fff;
+}

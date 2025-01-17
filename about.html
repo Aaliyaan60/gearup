@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="styles.js"></script>
+    <style>
+       * {
+        box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    flex: 1;
+    padding-bottom: 0mm;
+}
+footer {
+    background: rgb(54, 12, 12);;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+
+html,body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    line-height: 1.6;
+    overflow: scroll;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.car-grid {
+
+display: block;
+grid-template-columns: repeat(4, 1fr);
+gap: 1rem;
+}
+.container{
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo .blue {
+    color: rgb(188, 35, 35);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 1.5rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: rgb(188, 35, 35);
+}
+.search input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+.search button {
+    padding: 0.5rem;
+    background: rgb(188, 35, 35);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.call-to-action button{
+    padding: 0.5rem;
+    background: rgb(188, 35, 35);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.hero-image {
+    width: auto;   
+    height: 0%;   
+    background: transparent;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+     background-color: rgb(54, 12, 12); 
+}
+.hero-content h1 {
+    font-size: 3rem;
+    color:white;
+}
+.car-tranding {
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 10px;
+    text-align: center;
+}
+
+.car-tranding h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.aa{
+    text-align: center;
+}
+.car-grid {
+
+    display: block;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.car-card {
+    background: rgb(54, 12, 12);
+    padding: 1rem;
+    
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+
+.car-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+}
+
+.car-card h3 {
+    font-size: 1.2rem;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.darkmode{
+    background-color: black;
+  color: white;
+}
+.darkmode button {
+    background-color: #333;
+    color: white;
+ }
+
+
+body.darkmode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.darkmode header {
+    background-color: #222;
+    color: #fff;
+}
+
+body.darkmode nav ul li a {
+    color: #fff;
+}
+body.darkmode .search button{
+    background-color:rgb(188, 35, 35); 
+}
+body.darkmode nav ul li a:hover {
+    color: rgb(188, 35, 35);
+}
+
+body.darkmode .car-card {
+    background-color: #444;
+    color: #fff;
+}
+
+
+body.darkmode footer {
+    background-color:rgb(54, 12, 12);
+    color: #fff;
+}
+
+.darkmode button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+body.darkmode .car-card h2{
+color: rgb(188, 35, 35);
+}
+body.darkmode .call-to-action button{
+    padding: 0.5rem;
+    background: rgb(188, 35, 35);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+body.darkmode .darkmode button {
+    background-color: #555;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class="content">
+   
+    <header>
+        <div class="logo"><span class="blue">G</span>ear<span class="blue">U</span>p</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="#" target="_self">About</a></li>
+                <li><a href="store.html" target="_self">Store</a></li>
+                <li><a href="contacts.html" target="_self">Contacts</a></li>
+                <li><a href="register.html" target="_self">Registration</a></li>
+            </ul>
+        </nav>
+        <div class="darkmode"> 
+            <button onclick="darkmode()">Dark mode</button>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+    <div class="car-tranding">
+    <div class="car-grid">
+            <div class="container">
+        <div class="section">
+        <div class="car-card">
+                    
+            <h2>Purpose of GearUp Automobile Accessories and Store</h2>
+            <p > At GearUp, our purpose is to provide car enthusiasts and vehicle owners with the highest quality automobile parts and accessories from trusted brands. We specialize in offering genuine American, German, and Japanese car parts, ensuring that each product we offer is built to last and designed for optimal performance.
+             Our mission is to be the go-to destination for all automotive needs, delivering exceptional customer service and expert guidance to help you keep your vehicle running smoothly. Whether you're looking for spare parts for routine maintenance, performance upgrades, or repair solutions, GearUp is committed to offering a seamless shopping experience and trusted parts to keep you on the road with confidence.
+    
+            </div>
+        </div>
+<br>
+        <div class="section">
+            <div class="car-card">
+                <h2>Our Story</h2>
+                <p>Founded over 20 years ago, <strong> GearUp Automobile Accessories and Store</strong> began with a simple mission: to provide high-quality, genuine car parts and accessories to automotive enthusiasts in Pakistan. Specializing in American, German, and Japanese car parts, we’ve earned a reputation for reliability and excellence. Our dedication to customer satisfaction has helped us grow into one of the leading automotive parts suppliers. At GearUp, we’re committed to keeping your vehicle in top shape with the best products and expert service.</p>
+             </div>
+        </div>
+        <br>
+<div class="section">
+    <div class="car-card">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <div>
+                    <h3>Aaliyaan Ameen</h3>
+                <h3>Chief Executive Officer</h3>
+                    <p>Role: Leads the company, setting its strategic direction, overseeing operations, and ensuring overall success.
+                    </p>
+                    <p>Passion: Driven by a passion for innovation, growth, and achieving long-term success for the company.</p>
+                </div>
+            </div>
+            <br>
+            <div class="team-member">
+                <div>
+                    <h3>Qadeer Ahmed</h3>
+                    <h3>Chief Operating Officer</h3>
+                    <p>Role: Manages day-to-day operations, ensuring efficiency in production, supply chain, and logistics.</p>
+                        <p>Passion: Focused on optimizing processes and driving operational excellence to meet company goals.</p>
+                </div>
+            </div>
+            <br>
+            <div class="team-member">
+                <div>
+                    <h3>Mayank Raj</h3>
+                    <h3>Chief Finance Officer</h3>
+                    <p>Role: Oversees financial planning, budgeting, and financial health of the company.</p>
+                        <p>Passion: Passionate about ensuring financial stability, strategic growth, and making data-driven decisions.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="section">
+            <div class="car-card">
+            <h2>Hobbies and Skills</h2>
+            <h3>Hobbies:</h3> 
+            <div class="aa">
+                <p>
+                <strong> Reading:</strong> Engaging with books or articles to learn or escape into different stories and ideas.
+<br>
+<strong>Gardening:</strong> Growing plants or flowers, providing a relaxing connection to nature.
+<br>
+<strong>Painting:</strong> Creating art with colors, expressing creativity and emotions on a canvas.
+<br>
+<strong>Playing a Musical Instrument:</strong> Making music through instruments like the guitar or piano, offering relaxation and skill development.
+                </p>
+<h3>Skills:</h3>
+<p><strong>Leadership:</strong> Ability to guide and inspire teams, set clear goals, and ensure alignment with company objectives.<br>
+    <strong>Problem-Solving:</strong> Strong analytical skills to identify challenges and implement innovative solutions quickly and effectively.<br>
+<strong>Financial Management:</strong> Expertise in budgeting, forecasting, and financial analysis to ensure company profitability and growth.<br>
+<strong> Management:</strong> Skilled in managing cross-functional teams, timelines, and resources to deliver projects on time and within budget.</p>
+        </div>
+        </div>
+        </div>
+    
+        <br>
+        <div class="aa">
+        <div class="section">
+            <div class="car-card">
+            <h2>Achievements</h2>
+            <p>      
+            <strong> Customer Service Award:</strong> Recognized for outstanding customer support, ensuring timely assistance and personalized service.
+<br>
+<strong>Top Retailer Award:</strong> Earned accolades as one of the top-performing retailers in the region for sales volume and product availability.
+            <br>
+        <strong>Excellence in Product Quality:</strong> Received an award for consistently offering high-quality automobile parts and accessories that meet industry standards.
+            <br>
+        <strong>Innovation in E-commerce Award:</strong> Honored for launching an innovative online platform, making it easier for customers to order and receive products. 
+            <br>
+        <strong>Sustainability Excellence Award:</strong> Acknowledged for implementing eco-friendly practices, such as offering sustainable or recyclable automobile parts and reducing the store’s environmental footprint.
+           
+        </div>
+        </div>
+</div>
+            </div>
+            <br>
+        <div class="call-to-action">
+            <a href="contact.html" ><button>Contact Us</button></a>
+            <a href="book.html" ><button>Book Now</button></a>
+        </div>
+    </div>
+<br>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 GearUp Automobile Accessories and Store. All rights reserved</p>
+    </footer>
+</body>
+</html>

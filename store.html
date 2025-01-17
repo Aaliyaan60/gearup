@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="styles.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    line-height: 1.6;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body.darkmode .fleet .description{
+    color: white;
+}
+body.darkmode .darkmode button {
+    background-color: #555;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo .blue {
+    color: rgb(188, 35, 35);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 1.5rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: rgb(188, 35, 35);
+}
+.search input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+.search button {
+    padding: 0.5rem;
+    background: rgb(188, 35, 35);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.darkmode button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+        .fleet {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .fleet h1 {
+            font-size: 2.5rem;
+            color: rgb(188, 35, 35);
+            margin-bottom: 10px;
+        }
+
+        .fleet .description {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .fleet-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .fleet-item {
+            background-color: #222;
+            border: 1px solid #444;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .fleet-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .fleet-item img {
+            width: auto;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .fleet-item-content {
+            padding: 15px;
+        }
+
+        .fleet-item h2 {
+            color: white;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .fleet-item .rating {
+            color:white;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .fleet-item .rate{
+            color:rgb(188, 35, 35);
+        }
+
+        .fleet-item p {
+            font-size: 1rem;
+            color: #ccc;
+            margin: 0 0 10px;
+        }
+
+        .fleet-item button {
+            background-color: rgb(188, 35, 35);
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .fleet-item button:hover {
+            background-color: rgb(188, 35, 35);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><span class="blue">G</span>ear<span class="blue">U</span>p</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+                <li><a href="#" target="_self">Store</a></li>
+                <li><a href="contacts.html" target="_self">Contacts</a></li>
+                <li><a href="register.html" target="_self">Registration</a></li>
+                
+            </ul>
+        </nav>
+        <div class="darkmode"> 
+            <button onclick="darkmode()">Dark mode</button>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <section class="fleet">
+        <h1>Our Products</h1>
+        <p class="description">Experience the Excellence of Best Car Spare Parts In Pakistan</p>
+        <div class="fleet-container">
+            <div class="fleet-item">
+                <br>
+                <img src="1.jpg" alt="image">
+                <div class="fleet-item-content">
+                    <h2>Toyota Corolla 2002-2008 Mpower Wiper Blade Set</h2>
+                    <p class="rating"><span class="rate">★★★★★</span></p>
+                    <p>High quality Silicone rubber type blades set
+                        <br>14" and 24" size for Toyota Corolla
+                        <br>Easy to replace stock blades with luxury blades</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <br>
+                <img src="3.jpg" alt="image">
+                <div class="fleet-item-content">
+                    <h2>Honda N-One Mpower Luxury Wiper Blade Set</h2>
+                    <p class="rating"><span class="rate">★★★★</span>★</p>
+                    <p>High quality Silicone rubber type blades set
+                        <br>16" and 24" size for Honda N one
+                        <br>Easy to replace stock blades with luxury blades.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <br>
+                <img src="2.jpg" alt="image">
+                <div class="fleet-item-content">
+                    <h2>NGK Standard Spark Plug - BPR5ES11 - 1 Pcs</h2>
+                    <p class="rating"><span class="rate">★★★★</span>★</p>
+                    <p>OEM Quality
+                        <br>Triple-Gasket Sealing Process
+                        <br>Consistent Performance
+                        <br>Plug of Choice in Millions of Vehicles.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <br>
+                <img src="5.jpg" alt="image">
+                <div class="fleet-item-content">
+                    <h2>Honda City 2009-2020 Car Key Cover</h2>
+                    <p class="rating"><span class="rate">★★★★</span>★</p>
+                    <p>High quality Silicone key cover
+                    <br>Protects key from scratch and water moistures
+                    <br>Keep the Key buttons dust free</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <br>
+                <img src="6.jpg" alt="image">
+                <div class="fleet-item-content">
+                    <h2>STP Super Seal Air Conditioner Stop Leak Kit</h2>
+                    <p class="rating"><span class="rate">★★★★</span>★</p>
+                    <p>Repairs metal leaks in evaporators, condensers, compressors, accumulators, and receiver dryers. Contains leak sealer to seal common A/C leaks.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <br>
+                <img src="7.jpg" alt="image">
+                <div class="fleet-item-content">
+                    <h2>Toyota Prado 1996-2002 Central Tie Rod End Set</h2>
+                    <p class="rating"><span class="rate">★★★★★</span></p>
+                    <p>Highly recommended for lowered vehicles.
+                        <br>Correct lowered geometry
+                        <br>Direct bolt-on with OEM components
+                        <br>Provide better feedback to the driver</p>
+                        <br>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <br>
+                <img src="9.jpg" alt="image">
+                <div class="fleet-item-content">
+                    <h2>Genuine Front Z Link Stabilizer Rod 1 Pc</h2>
+                    <p class="rating"><span class="rate">★★★★★</span></p>
+                    <p>Part number 548401J000
+                        <br>For Kia Picanto
+                        <br>Front Z Link Stabilizer Rod
+                        <br>Right Side
+                        <br>Single 1 Pc</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <br>
+                <img src="10.jpg" alt="image">
+                <div class="fleet-item-content">
+                    <h2>Honda Civic Fender Insulator Engine Cover</h2>
+                    <p class="rating"><span class="rate">★★★★</span>★</p>
+                    <p>High-quality Taiwan made
+                        <br>ABS Plastic Fender Covers For Engine Bay
+                        <br>Protect Engine Bay from Mud and Dirt
+                        <br>2Pcs</p>
+                        <br>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <br>
+                <img src="11.jpg" alt="Yaris">
+                <div class="fleet-item-content">
+                    <h2>Nexen Tire Npriz SH9i 165/65R14</h2>
+                    <p class="rating"><span class="rate">★★★★</span>★</p>
+                    <p>These tyres have a pot hole and mileage guarantee which is very handy if you drive in area that is prone to pot holes. They have an improved block reliability andbraking performance by way of a 3D section design.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="fleet-item">
+                <img src="12.jpg" alt="BRV">
+                <div class="fleet-item-content">
+                    <h2>All In One Car Care Kit - Pack Of 5</h2>
+                    <p class="rating">★★★★★</p>
+                    <p>SHAKE WELL. Always test for colorfastness and compatibility on a small inconspicuous area.
+                        <br>Apply a few sprays to a clean towel or directly to the surface.</p>
+                        <br>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <footer>
+        <p><strong>&copy; 2025 GearUp Automobile Accessories and Store. All rights reserved</p></strong>
+    </footer>
+</body>
+</html>
