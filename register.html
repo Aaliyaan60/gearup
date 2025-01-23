@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="styles.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    line-height: 1.6;
+    overflow: scroll;
+        }
+        
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo .blue {
+    color: rgb(188, 35, 35);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-left: 1.5rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: rgb(188, 35, 35);
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    flex: 1; 
+}
+
+.search button {
+    padding: 0.5rem;
+    background: rgb(188, 35, 35);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+ .container {
+            background: rgba(0, 0, 0, 0.7);
+            margin: 41px auto;
+            padding: 32px;
+            width: 434px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(188, 35, 35);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 3px;
+            background: rgb(188, 35, 35);
+            color: #fff;
+            border: 2px solid whitesmoke;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: rgb(188, 35, 35);
+        }
+        form{
+            color: white;
+        }
+        .darkmode button{
+            background-color: #333;
+        }
+        body.darkmode .darkmode button {
+    background-color: #000000;
+    color: #fff;
+}
+body.darkmode header {
+    background-color: #222;
+    color: white;
+}
+
+body.darkmode nav ul li a {
+    color: #fff;
+}
+body.darkmode {
+    background-color: #333;
+    color: #fff;
+}
+body.darkmode nav ul li a:hover {
+    color: rgb(188, 35, 35);
+}
+body.darkmode button{
+    background-color: rgb(188, 35, 35);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><span class="blue">G</span>ear<span class="blue">U</span>p</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+                <li><a href="store.html" target="_self">Store</a></li>
+                <li><a href="contacts.html" target="_self">Contacts</a></li>
+                <li><a href="#" target="_self">Registration</a></li>
+                
+            </ul>
+        </nav>
+        <div class="darkmode"> 
+            <button onclick="darkmode()">Dark mode</button>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"  placeholder="Your Full Name"required >
+            <br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+            <br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="0000-0000000">
+            <br>
+            <label for="CNIC">CNIC Number:</label>
+            <input type="tel" id="Number" name="CNIC Number" placeholder="00000-0000000-0" required>
+            <br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Your address here" required style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+            
+           
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
